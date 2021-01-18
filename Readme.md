@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Tetiana Shnore](https://up.htmlacademy.ru/htmlcss/30/user/1644719).
-* Наставник: `Неизвестно`.
+* Наставник: [Лиза Пак](https://htmlacademy.ru/profile/lizzy).
 
 ---
 
