@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body>
+  <div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Информация</a></li>
+          <li><a href="">Фото и видео</a></li>
+          <li><a href="">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <div>
+          <img src="img/138x70" alt="Лого">
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div>
+          <img src="img/1200x509" alt="mountains">
+          <img src="img/457x351" alt="welcome">
+          <img src="img/1200x57" alt="white-mask">
+        </div>
+        <div>
+          <h4>
+            СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+            ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
+          </h4>
+          <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>
+            НАСТОЯЩИЙ<br>
+            ГОРОДОК
+          </p>
+          <p>— №1 —</p>
+          <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ<br>
+            ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
+        </div>
+        <div>
+          <img src="img/city-view_800x256" alt="city view">
+        </div>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <img src="img/75x72" alt="house">
+            <p>ЖИЛЬЁ</p>
+            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br>
+              МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
+          </li>
+          <li>
+            <img src="img/75x72" alt="burger">
+            <p>ЕДА</p>
+            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,<br>
+              ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+          </li>
+          <li>
+            <img src="img/75x72" alt="box">
+            <p>СУВЕНИРЫ</p>
+            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br>
+              ПРОИЗВОДСТВА!</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div>
+          <img src="img/canyon-view_800x256" alt="canyon view">
+        </div>
+        <div>
+          <p>
+            ТАМ ЕСТЬ<br>
+            МОСТ ДЬЯВОЛА
+          </p>
+          <p>— №2 —</p>
+          <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br>
+            ВЫ ОСМЕЛИТЕСЬ</p>
+        </div>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <p>НЕБОЛЬШАЯ<br>
+              ПЛОЩАДЬ</p>
+            <p>— №3 —</p>
+            <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>
+              НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
+          </li>
+          <li>
+            <p>КРАСИВАЯ<br>
+              ДОРОГА</p>
+            <p>— №4 —</p>
+            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>
+              НЕ СКУЧНО!</p>
+          </li>
+          <li>
+            <p>МАЛО<br>
+              ТУРИСТОВ</p>
+            <p>— №5 —</p>
+            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br>
+              И ТОЛПИТСЯ ТАМ</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>ЗАИНТЕРЕСОВАЛИСЬ?</h3>
+        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
+          И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <label for="start-date">ДАТА ЗАЕЗДА:</label>
+            <input type="date" id="start-date" name="start-date">
+            <label for="end-date">ДАТА ВЫЕЗДА:</label>
+            <input type="date" id="end-date" name="end-date">
+            <div>
+              <label for="adults">ВЗРОСЛЫЕ:</label>
+              <span>-</span>
+              <input type="number" id="adults" name="adults" value="2">
+              <span>+</span>
+            </div>
+            <div>
+              <label for="children">ДЕТИ:</label>
+              <span>-</span>
+              <input type="number" id="children" name="children" value="0">
+              <span>+</span>
+            </div>
+            <button type="submit">НАЙТИ</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <img src="img/1199x594" alt="map">
+      </section>
+    </main>
+    <footer>
+      <section>
+        <p>
+          #visitSEDONA<br>
+          ТЕЛ: +7(495) 666-01-66
+        </p>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <a href="">Твиттер</a>
+          </li>
+          <li>
+            <a href="">Фейсбук</a>
+          </li>
+          <li>
+            <a href="">Ютуб</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          Website by
+          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        </p>
+      </section>
+    </footer>
+  </div>
+</body>
+
 </html>
