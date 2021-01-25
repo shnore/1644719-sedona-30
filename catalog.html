@@ -16,16 +16,14 @@
           <li><a href="">Карта штата</a></li>
           <li><a href="">Гостиницы</a></li>
         </ul>
-        <div>
-          <a href="index.html">
-            <img src="img/138x70" alt="Лого">
-          </a>
-        </div>
+        <a href="index.html">
+          <img src="img/138x70" alt="Лого">
+        </a>
       </nav>
     </header>
     <main>
       <!--search-->
-      <section>
+      <form action="https://echo.htmlacademy.ru" method="POST">
         <div>
           <p>ИНФРАСТРУКТУРА:</p>
           <label>
@@ -54,43 +52,38 @@
         </div>
         <div>
           <p>СТОИМОСТЬ В СУТКИ (Р):</p>
-          <form action="https://echo.htmlacademy.ru" method="POST">
-            <input type="text" value="от 0">
-            <input type="text" value="До 3000">
-            <br>
-            <input type="range" value="3000" min="0" max="5000" step="1000">
-            <button type="submit" name="show">ПОКАЗАТЬ</button>
-          </form>
+          <input type="text" value="от 0">
+          <input type="text" value="До 3000">
+          <input type="range" value="3000" min="0" max="5000" step="1000">
+          <button type="submit" name="show">ПОКАЗАТЬ</button>
         </div>
-      </section>
+      </form>
       <!--results-->
       <section>
         <div>
           <p>НАЙДЕНО:3</p>
           <ul>
-            <li>Сортировка</li>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
+            <li><a href="">Сортировка</a></li>
+            <li><a href="">По цене</a></li>
+            <li><a href="">По типу</a></li>
+            <li><a href="">По рейтингу</a></li>
           </ul>
           <div>
-            <img src="11x10" alt="asc">
-            <img src="11x10" alt="desc">
+            <a href=""><img src="11x10" alt="asc"></a>
+            <a href=""><img src="11x10" alt="desc"></a>
           </div>
         </div>
         <div>
           <ul>
             <li>
               <!--IMAGE-->
-              <div>
-                <img src="135x90" alt="thumb">
-              </div>
+              <img src="135x90" alt="thumb">
               <!--TEXT-->
               <div>
                 <p>AMARA RESORT & SPA</p>
                 <div>
-                  <div>ГОСТИНИЦА</div>
-                  <div>ОТ 4000 Р.</div>
+                  <p>ГОСТИНИЦА</p>
+                  <p>ОТ 4000 Р.</p>
                 </div>
                 <p>
                   <button type="button">ПОДРОБНЕЕ</button>
@@ -100,20 +93,18 @@
               <!--RATING-->
               <div>
                 <p>★★★★</p>
-                <div>РЕЙТИНГ: 8,5</div>
+                <p>РЕЙТИНГ: 8,5</p>
               </div>
             </li>
             <li>
               <!--IMAGE-->
-              <div>
-                <img src="135x90" alt="thumb">
-              </div>
+              <img src="135x90" alt="thumb">
               <!--TEXT-->
               <div>
                 <p>DESERT QUAIL INN</p>
                 <div>
-                  <div>МОТЕЛЬ</div>
-                  <div>ОТ 3000 Р.</div>
+                  <p>МОТЕЛЬ</p>
+                  <p>ОТ 3000 Р.</p>
                 </div>
                 <p>
                   <button type="button">ПОДРОБНЕЕ</button>
@@ -123,20 +114,18 @@
               <!--RATING-->
               <div>
                 <p>★★★</p>
-                <div>РЕЙТИНГ: 8,9</div>
+                <p>РЕЙТИНГ: 8,9</p>
               </div>
             </li>
             <li>
               <!--IMAGE-->
-              <div>
-                <img src="135x90" alt="thumb">
-              </div>
+              <img src="135x90" alt="thumb">
               <!--TEXT-->
               <div>
                 <p>VILLAS AT POCO DIABLO</p>
                 <div>
-                  <div>АПАРТАМЕНТЫ</div>
-                  <div>ОТ 2000 Р.</div>
+                  <p>АПАРТАМЕНТЫ</p>
+                  <p>ОТ 2000 Р.</p>
                 </div>
                 <p>
                   <button type="button">ПОДРОБНЕЕ</button>
@@ -146,7 +135,7 @@
               <!--RATING-->
               <div>
                 <p>★★</p>
-                <div>РЕЙТИНГ: 9,2</div>
+                <p>РЕЙТИНГ: 9,2</p>
               </div>
             </li>
           </ul>
@@ -156,8 +145,8 @@
     <footer>
       <section>
         <p>
-          #visitSEDONA<br>
-          ТЕЛ: +7(495) 666-01-66
+          <a href="">#visitSEDONA</a>
+          <a href="">ТЕЛ: +7(495) 666-01-66</a>
         </p>
       </section>
       <section>
@@ -182,4 +171,5 @@
     </footer>
   </div>
 </body>
+
 </html>
