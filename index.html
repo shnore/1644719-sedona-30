@@ -5,138 +5,144 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fonts/PTSans-Bold.woff2">
+  <link rel="stylesheet" href="fonts/PTSans-Bold.woff">
+  <link rel="stylesheet" href="fonts/PTSans.woff2">
+  <link rel="stylesheet" href="fonts/PTSans.woff">
 </head>
 
-<body>
-  <div>
+<body class="body">
+  <div class="page-wrapper">
+    <div class="page">
     <header>
-      <nav>
-        <ul>
-          <li><a href="">Информация</a></li>
-          <li><a href="">Фото и видео</a></li>
-          <li><a href="">Карта штата</a></li>
-          <li><a href="catalog.html">Гостиницы</a></li>
+      <nav class="navigation-wrapper">
+        <ul class="navigation">
+          <li class="nav-item current"><a href="">Информация</a></li>
+          <li class="nav-item"><a href="">Фото и видео</a></li>
+          <li class="nav-item"><a href="">Карта штата</a></li>
+          <li class="nav-item"><a href="catalog.html">Гостиницы</a></li>
         </ul>
-        <div>
+        <div class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </div>
       </nav>
     </header>
-    <main>
+    <main class="content">
       <section>
-        <div>
+        <div class="welcome-picture">
           <!--background image with welcome text-->
         </div>
-        <div>
-          <!--white mask-->
-        </div>
-        <div>
-          <p>
+        <div class="intro-content">
+          <p class="intro-text">
             СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
             ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
           </p>
-          <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+          <p class="text-subline">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
         </div>
       </section>
-      <section>
-        <div>
-          <p>
+      <section class="panel-wrapper">
+        <div class="panel">
+          <p class="panel-header">
             НАСТОЯЩИЙ
             ГОРОДОК
           </p>
-          <p>— №1 —</p>
-          <p>СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ
+          <p class="panel-number">— №1 —</p>
+          <p class="panel-desc">СЕДОНА - НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ
             ТЕЧЁТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <div>
+        <div class="panel-image">
           <img src="img/sedona-view.jpg" width="800" height="256" alt="Вид города Седона">
         </div>
       </section>
-      <section>
-        <ul>
-          <li>
+      <section class="features">
+        <ul class="features-list">
+          <li class="feature-item">
             <img src="img/icons/icon-1.svg" width="75" height="72" alt="Жильё">
-            <p>ЖИЛЬЁ</p>
-            <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
+            <p class="feature-item-header">ЖИЛЬЁ</p>
+            <p class="text-subline">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
               МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
           </li>
-          <li>
-            <img src="img/icons/icon-3.svg" width="75" height="72" alt="Еда">
-            <p>ЕДА</p>
-            <p>ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,
+          <li class="feature-item">
+            <img src="img/icons/icon-3.svg" width="75" height="70" alt="Еда">
+            <p class="feature-item-header">ЕДА</p>
+            <p class="text-subline">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,
               ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
           </li>
-          <li>
-            <img src="img/icons/icon-2.svg" width="75" height="72" alt="Сувениры">
-            <p>СУВЕНИРЫ</p>
-            <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
+          <li class="feature-item">
+            <img src="img/icons/icon-2.svg" width="64" height="77" alt="Сувениры">
+            <p class="feature-item-header">СУВЕНИРЫ</p>
+            <p class="text-subline">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
               ПРОИЗВОДСТВА!</p>
           </li>
         </ul>
       </section>
-      <section>
-        <div>
+      <section class="panel-wrapper">
+        <div class="panel-image">
           <img src="img/canyon.jpg" width="800" height="256" alt="Каньон">
         </div>
-        <div>
-          <p>
+        <div class="panel">
+          <p class="panel-header">
             ТАМ ЕСТЬ
             МОСТ ДЬЯВОЛА
           </p>
-          <p>— №2 —</p>
-          <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО
+          <p class="panel-number">— №2 —</p>
+          <p class="panel-desc">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО
             ВЫ ОСМЕЛИТЕСЬ</p>
         </div>
       </section>
-      <section>
-        <ul>
-          <li>
-            <p>НЕБОЛЬШАЯ
+      <section class="features">
+        <ul class="features-list">
+          <li class="feature-item">
+            <p class="feature-item-header">НЕБОЛЬШАЯ
               ПЛОЩАДЬ</p>
-            <p>— №3 —</p>
-            <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+            <p class="feature-number">— №3 —</p>
+            <p class="text-subline">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
               НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
-          <li>
-            <p>КРАСИВАЯ
+          <li class="feature-item">
+            <p class="feature-item-header">КРАСИВАЯ
               ДОРОГА</p>
-            <p>— №4 —</p>
-            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
+            <p class="feature-number">— №4 —</p>
+            <p class="text-subline">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
               НЕ СКУЧНО!</p>
           </li>
-          <li>
-            <p>МАЛО
+          <li class="feature-item">
+            <p class="feature-item-header">МАЛО
               ТУРИСТОВ</p>
-            <p>— №5 —</p>
-            <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН
+            <p class="feature-number">— №5 —</p>
+            <p class="text-subline">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН
               И ТОЛПИТСЯ ТАМ</p>
           </li>
         </ul>
       </section>
-      <section>
-        <p>ЗАИНТЕРЕСОВАЛИСЬ?</p>
-        <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
+      <section class="search-hotel">
+        <p class="search-hotel-header">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+        <p class="search-hotel-info">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
           И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-        <div>
-          <form action="https://echo.htmlacademy.ru" method="POST">
+        <button class="search-hotel-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+        <div class="search-hotel-form-wrapper">
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
             <label for="start-date">ДАТА ЗАЕЗДА:</label>
-            <input type="date" id="start-date" name="start-date">
+            <input type="date" name="start-date" value="2017-04-24">
             <label for="end-date">ДАТА ВЫЕЗДА:</label>
-            <input type="date" id="end-date" name="end-date">
-            <div>
+            <input type="date" name="end-date" placeholder="2017-07-04">
+            <div class="numbers">
+              <div class="number">
               <label for="adults">ВЗРОСЛЫЕ:</label>
-              <span>-</span>
-              <input type="number" id="adults" name="adults" value="2">
-              <span>+</span>
+              <button class="minus" type="button"></button>
+              <input type="text" type="number" id="adults" name="adults" value="2">
+              <button class="plus" type="button"></button>
             </div>
-            <div>
+            <div class="number">
               <label for="children">ДЕТИ:</label>
-              <span>-</span>
-              <input type="number" id="children" name="children" value="0">
-              <span>+</span>
+              <button class="minus" type="button"></button>
+              <input type="text" type="number" id="children" name="children" value="0">
+              <button class="plus" type="button"></button>
             </div>
-            <button type="submit">НАЙТИ</button>
+            </div>
+            <button class="search-button"type="submit">НАЙТИ</button>
           </form>
         </div>
       </section>
@@ -144,33 +150,33 @@
         <img src="img/map.jpg" width="1199" height="594" alt="Карта">
       </section>
     </main>
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-contacts">
         <p>
           <a href="">#visitSEDONA</a>
           <a href="">ТЕЛ: +7(495) 666-01-66</a>
         </p>
       </section>
-      <section>
+      <section class="footer-social">
         <ul>
-          <li>
-            <a href="">
-              <img src="img/icons/twitter.svg" width="17" height="17" alt="Твиттер">
-            </a>
-          </li>
-          <li>
-            <a href="">
+          <a class="social-button" href="">
+            <li class="footer-social-list-item">
+              <img class="social-icon" src="img/icons/twitter.svg" width="17" height="17" alt="Твиттер">
+            </li>
+          </a>
+          <a class="social-button" href="">
+            <li class="footer-social-list-item">
               <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
-            </a>
-          </li>
-          <li>
-            <a href="">
+            </li>
+          </a>
+          <a class="social-button" href="">
+            <li class="footer-social-list-item">
               <img src="img/icons/youtube.svg" width="20" height="16" alt="Ютуб">
-            </a>
-          </li>
+            </li>
+          </a>
         </ul>
       </section>
-      <section>
+      <section class="footer-copyright">
         <p>
           Website by
           <a href="https://htmlacademy.ru/intensive/htmlcss">
@@ -179,6 +185,7 @@
         </p>
       </section>
     </footer>
+  </div>
   </div>
 </body>
 
