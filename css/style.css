@@ -27,58 +27,45 @@
 }
 
 /* Global */
-.regular
 
 @font-face {
   font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
   src:
     url("../fonts/PTSans.woff2") format("woff2"),
     url("../fonts/PTSans.woff") format("woff");
 }
 
 @font-face {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
   src:
     url("../fonts/PTSans-Bold.woff2") format("woff2"),
     url("../fonts/PTSans-Bold.woff") format("woff");
 }
 
+
 body {
   min-width: 1280px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
-  font-weight: 700;
-  font-style: normal;
   text-align: center;
-  letter-spacing: 0px;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-grey);
-  list-style: none;
-}
-
-.page-wrapper {
-  background-color: var(--basic-white);
-  width: 1280px;
-  height: auto;
-  margin: 0 auto;
-  padding: 0 auto;
-
 }
 
 .page {
   background-color: var(--basic-white);
-  width: 1200px;
-  height: auto;
   margin: 0 auto;
-  /* padding: 0 40px 0 40px; */
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
-/* В лайве Николай разрешил, здесь это оправдано */
 a {
   text-decoration: none;
 }
@@ -97,14 +84,11 @@ img {
 
 .navigation-wrapper {
   background-color: var(--basic-white);
-  height: 70px;
-
 }
 
 .nav-item {
   list-style: none;
 }
-
 
 .main-header-logo {
   background-color: var(--basic-blue);
@@ -129,8 +113,6 @@ img {
   color: var(--opaque-black);
 }
 
-
-
 /* intro block */
 
 .intro-text {
@@ -139,38 +121,30 @@ img {
 
 .text-subline {
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: var(--basic-dark);
 }
 
 .welcome-picture {
-  background: url(../img/shape.svg) no-repeat center bottom, url(../img/welcome.svg) no-repeat center center, url(../img/background-photo.jpg);
+  background: url(../img/shape.svg) no-repeat center bottom,
+  url(../img/welcome.svg) no-repeat center center,
+  url(../img/background-photo.jpg) no-repeat;
   height: 509px;
-  width: 1200px;
   background-color: var(--basic-blue);
 }
 
 .intro-content {
-  width: 1200px;
-  height: 216px;
-  background-color: var(--basic-white);
+ background-color: var(--basic-white);
 }
 
 /* Panel */
 
-.panel-wrapper {
-  width: 1200px;
-  height: 256px;
-}
-
 .panel {
-  height: 256px;
   background-color: var(--basic-blue);
 }
 
 .panel-image {
   width: 800px;
-  height: 256px;
   background-color: var(--basic-blue);
 }
 
@@ -183,16 +157,12 @@ img {
 .panel-number,
 .panel-desc {
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 21px;
   color: var(--basic-white);
 }
 
 /* Features */
-
-.features-list {
-  width: 1200px;
-}
 
 .feature-item {
   width: 400px;
@@ -206,7 +176,7 @@ img {
 }
 
 .feature-number {
-  font-weight: 400;
+  font-weight: 700;
   line-height: 21px;
   font-family: "PT Sans", Arial, sans-serif;
   color: var(--basic-dark);
@@ -220,7 +190,7 @@ img {
 
 .search-hotel-info {
   font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 24px;
   color: var(--basic-dark);
 }
@@ -251,11 +221,8 @@ img {
 
 .search-hotel-form-wrapper {
   width: 568px;
-  height: 395px;
   background-color: var(--basic-white);
-  position: absolute;
-  margin-left: 316px;
-  z-index: 9999;
+  z-index: 10;
 }
 
 .search-hotel-form {
@@ -276,7 +243,6 @@ img {
   border-color: var(--special);
 }
 
-
 .number {
   display: inline-block;
   max-width: 228px;
@@ -284,13 +250,10 @@ img {
 }
 
 .number input {
-  /* width: 114px;
-  height: 38px; */
   width: 36px;
   height: 36px;
   text-align: center;
   padding: 0;
-  margin-right: -4px;
 }
 
 .minus {
@@ -298,11 +261,8 @@ img {
   height:36px;
   background: url(../img/icons/minus-sign.svg) no-repeat center center;
   background-color: var(--basic-light);
-  vertical-align: middle;
   text-align: center;
   border: none;
-  margin-right: -3px;
-
 }
 
 .plus{
@@ -310,10 +270,8 @@ img {
   height:36px;
   background: url(../img/icons/plus-sign.svg) no-repeat center center;
   background-color: var(--basic-light);
-  vertical-align: middle;
   text-align: center;
   border: none;
-  margin-right: -3px;
 }
 
 .search-button {
@@ -341,8 +299,6 @@ img {
 }
 
 .main-footer {
-  width: 1200px;
-  height: 120px;
   background-color: var(--basic-white);
   }
 
@@ -350,7 +306,6 @@ img {
 .footer-social,
 .footer-copyright {
   width: 400px;
-  height: 120px;
 }
 
 .footer-contacts {
@@ -360,7 +315,6 @@ img {
 .footer-contacts a {
   font-size: 21px;
   width: 100%;
-  height: 100%;
 }
 
 .footer-contacts a {
@@ -415,4 +369,3 @@ img {
 .footer-copyright:active {
   color: var(--pressed-html-logo);
 }
-
