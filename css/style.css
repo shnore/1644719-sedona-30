@@ -10,6 +10,8 @@
   --basic-dark: #333333;
   --basic-brown: #766357;
   --basic-light: #F2F2F2;
+  --basic-dark-brown: #666666;
+  --basic-light-grey: #CACACA;
 
   --hovered-blue: #669EC0;
   --pressed-blue: #5496BD;
@@ -110,7 +112,7 @@ img {
 
 .current a, .nav-item a:active,
 .user-navigation a:active {
-  color: var(--opaque-black);
+  color: var(--basic-brown);
 }
 
 /* intro block */
@@ -175,7 +177,8 @@ img {
   color: var(--basic-black);
 }
 
-.feature-number {
+.feature-number,
+.results-item-subline {
   font-weight: 700;
   line-height: 21px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -369,3 +372,221 @@ img {
 .footer-copyright:active {
   color: var(--pressed-html-logo);
 }
+
+/* Search catalog */
+
+
+/* Filter */
+
+.filter-item-header {
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--basic-white);
+}
+
+.filter-checkbox-label{
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+ }
+
+.filter-background {
+  height:217px;
+  left:40px;
+  background: url(../img/background.jpg) no-repeat center;
+  background-color: var(--basic-blue);
+}
+
+/* Slider */
+
+.filter-item-header,
+.filter-price-min,
+.filter-price-max,
+.filter-price-range
+.filter-show-button {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--basic-white);
+  background-color: transparent;
+}
+
+.filter-price-values {
+  border: 2px solid white;
+  display: inline-block;
+}
+
+.filter-price-min,
+.filter-price-max {
+  border: none;
+  height: 36px;
+  width: 158px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.filter-price-min {
+  border-right: 2px solid white;
+}
+
+.filter-price-range {
+  outline: none;
+}
+
+.filter-price-range:focus {
+  outline: none;
+}
+
+.filter-show-button {
+  background-color: transparent;
+  height: 36px;
+  width: 137px;
+  border: 2px solid white;
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  outline: none;
+}
+
+.filter-show-button:hover,
+.filter-show-button:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+  border: none;
+  outline: none;
+}
+
+/* Results */
+
+.sort-controls{
+  list-style: none;
+}
+
+ .sort-header {
+  color: var(--basic-black);
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+ }
+
+ .sort-control a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--opaque-black);
+  border-bottom: 1px dashed var(--basic-blue);
+ }
+
+ .sort-active a {
+  color: var(--basic-blue);
+  border-bottom: none;
+}
+
+.sort-control a:hover,
+.sort-control a:focus {
+  color: var(--basic-blue);
+}
+
+.sort-control a:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+.sort-ascending,
+.sort-descending {
+  color: var(--basic-light-grey);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sort-ascending:hover,
+.sort-ascending:focus,
+.sort-descending:hover,
+.sort-descending:focus {
+  color: var(--basic-black);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sort-ascending:active,
+.sort-descending:active {
+  color: var(--basic-blue);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Results items */
+
+.results-item {
+  list-style:none;
+
+}
+
+.results-item-header {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.details-button {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.details-button:hover,
+.details-button:focus {
+  background-color: var(--hovered-blue);
+  border: none;
+  outline: none;
+}
+
+.details-button:active {
+  background-color: var(--hovered-blue);
+  border: none;
+  color: var(--opaque-white);
+  outline: none;
+}
+
+.book-button {
+    width: 142px;
+    height: 27px;
+    background-color: var(--basic-brown);
+    color: var(--basic-white);
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+  .book-button:hover,
+  .book-button:focus {
+    background-color: var(--hovered-brown);
+    border: none;
+    outline: none;
+  }
+
+  .book-button:active {
+    background-color: var(--pressed-brown);
+    border: none;
+    color: var(--opaque-white);
+    outline: none;
+  }
+
+.stars {
+  color: var(--basic-blue);
+  font-size: 18px;
+ }
+
+.rating-item {
+  color: var(--basic-dark-brown);
+  background-color: var(--basic-light);
+  font-size: 14px;
+  font-weight: 700;
+ }
