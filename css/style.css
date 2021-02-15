@@ -393,7 +393,6 @@ img {
 
 .filter-background {
   height:217px;
-  left:40px;
   background: url(../img/background.jpg) no-repeat center;
   background-color: var(--basic-blue);
 }
@@ -419,8 +418,8 @@ img {
 .filter-price-min,
 .filter-price-max {
   border: none;
-  height: 36px;
-  width: 158px;
+  /* height: 36px;
+  width: 158px; */
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -428,21 +427,18 @@ img {
   text-align: center;
 }
 
-.filter-price-min {
+input.filter-price-min {
   border-right: 2px solid white;
 }
 
-.filter-price-range {
-  outline: none;
-}
-
+.filter-price-min:focus,
+.filter-price-max:focus,
 .filter-price-range:focus {
   outline: none;
 }
 
 .filter-show-button {
   background-color: transparent;
-  height: 36px;
   width: 137px;
   border: 2px solid white;
   color: var(--basic-white);
