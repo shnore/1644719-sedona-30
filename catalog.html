@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body">
-  <div class="page">
-    <header>
-      <nav class="navigation-wrapper">
-        <ul class="navigation">
+<body class="page-body">
+  <div class="page-content">
+    <header class="header">
+      <nav class="navigation">
+        <ul class="menu">
           <li class="nav-item"><a href="index.html">Информация</a></li>
           <li class="nav-item"><a href="">Фото и видео</a></li>
           <li class="nav-item"><a href="">Карта штата</a></li>
@@ -27,8 +27,8 @@
     <main class="content">
       <!--filter-->
       <form  class="filter-background" action="https://echo.htmlacademy.ru" method="POST">
-        <div>
-          <p class="filter-item-header">ИНФРАСТРУКТУРА:</p>
+        <fieldset class="filter-fieldset">
+          <legend class="filter-item-header">ИНФРАСТРУКТУРА:</legend>
           <label class="filter-checkbox-label">
             <input type="checkbox" name="info" checked>
             БАССЕЙН
@@ -39,9 +39,9 @@
           <label class="filter-checkbox-label">
             <input type="checkbox" name="info">WI-FI
           </label>
-        </div>
-        <div>
-          <p class="filter-item-header">ТИП ЖИЛЬЯ:</p>
+        </fieldset>
+        <fieldset class="filter-fieldset">
+          <legend class="filter-item-header">ТИП ЖИЛЬЯ:</legend>
           <label class="filter-checkbox-label">
             <input type="checkbox" name="type" checked>
             ГОСТИНИЦА
@@ -52,14 +52,16 @@
           <label class="filter-checkbox-label">
             <input type="checkbox" name="type" checked>АПАРТАМЕНТЫ
           </label>
-        </div>
+        </fieldset>
         <div>
           <p class="filter-item-header">СТОИМОСТЬ В СУТКИ (Р):</p>
           <div class="filter-price-values">
-            <label class="filter-price-min">от</label>
-            <input class="filter-price-min" type="text" value="0">
-            <label class="filter-price-max">До</label>
-            <input class="filter-price-max" type="text" value="3000">
+            <label class="filter-price-min">от
+              <input class="filter-price-min" type="text" value="0">
+            </label>
+            <label class="filter-price-max">До
+              <input class="filter-price-max" type="text" value="3000">
+            </label>
           </div>
           <input class="filter-price-range" type="range" value="3000" min="0" max="5000" step="1000">
           <button class="filter-show-button" type="submit" name="show">ПОКАЗАТЬ</button>
