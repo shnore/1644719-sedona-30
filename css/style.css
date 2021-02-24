@@ -47,11 +47,7 @@
     url("../fonts/PTSans.woff") format("woff");
 }
 
-
-
 .page-body {
-  /* margin: 0;
-  padding: 0; */
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -59,15 +55,12 @@
   color: var(--basic-black);
   background-color: var(--basic-white);
   text-transform: uppercase;
-  width: 1280px;
   min-height: 100%;
   display: grid;
   grid-template-rows:
     min-content
     1fr
     min-content;
-  align-content: start;
-  margin: 0 auto;
 }
 
 /* Grid */
@@ -82,8 +75,8 @@
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-  outline: 5px solid rgba(0,255,0,0.7);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(0,255,0,0.7);
+  outline-offset: -5px; */
 }
 
 a {
@@ -96,8 +89,8 @@ img {
 }
 
 .header {
-  outline: 5px solid rgba(0,0,255,0.7);
-  outline-offset: -5px;
+  /* outline: 5px solid rgba(0,0,255,0.7);
+  outline-offset: -5px; */
   background-color: var(--basic-white);
 }
 
@@ -106,29 +99,41 @@ img {
 .navigation {
   font-size: 16px;
   line-height: 20px;
-  outline: 5px solid rgba(255,0,255,0.7);
-  outline-offset: -5px;
-  display: grid;
+  /* outline: 5px solid rgba(255,0,255,0.7);
+  outline-offset: -5px; */
+  position: relative;
 }
 
 .menu {
-  order: 1;
-  outline: 5px solid rgba(236, 141, 15, 0.8);
-  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* outline: 5px solid rgba(236, 141, 15, 0.8);
+  outline-offset: -5px; */
   margin: 0;
-  padding: 0;
+  padding: 0 70px;
 }
 
 .nav-item {
   list-style: none;
+  margin: 15px 0;
 }
 
 .main-header-logo {
-  background-color: var(--basic-blue);
-  outline: 5px solid rgba(7, 84, 156, 0.7);
-  outline-offset: -5px;
-  justify-self: center;
-  }
+  /* outline: 5px solid rgba(7, 84, 156, 0.7);
+  outline-offset: -5px; */
+  position: absolute;
+  top: 0;
+  left: 531px;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
 
 /* User navigation */
 
@@ -153,15 +158,13 @@ img {
 
 .intro-text {
   font-size: 21px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px auto;
+  max-width: 470px;
 }
 
 .text-subline {
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   color: var(--basic-dark);
-  margin: 0 50px;
 }
 
 .text-subline.text-intro-subline {
@@ -183,18 +186,16 @@ img {
 
 .intro-content {
  background-color: var(--basic-white);
-
 }
 
 /* Panel */
 
-.panel-wrapper {
+.panel-wrapper-left {
   display:grid;
   grid-template-columns: 1fr 2fr;
-  height: 256px;
 }
 
-.panel-wrapper-2 {
+.panel-wrapper-right {
   display:grid;
   grid-template-columns: 2fr 1fr;
   height: 256px;
@@ -219,11 +220,8 @@ img {
 
 .panel-number,
 .panel-desc {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-weight: 700;
   line-height: 21px;
-  margin: 20px;
-  padding: 0 20px;
+  margin: 20px 40px;
   color: var(--basic-white);
 }
 
@@ -243,7 +241,7 @@ img {
   outline-offset: -5px;
   list-style: none;
   text-align: center;
-  margin: 50px auto;
+  margin: 50px 0;
 }
 
 .feature-item-header {
@@ -261,8 +259,14 @@ img {
 .results-item-subline {
   font-weight: 700;
   line-height: 21px;
-  font-family: "PT Sans", Arial, sans-serif;
   color: var(--basic-dark);
+}
+
+
+/* Main Search */
+
+.search {
+  position: relative;
 }
 
 .search-hotel-header {
@@ -272,11 +276,11 @@ img {
 }
 
 .search-hotel-info {
-  font-family: "PT Sans", Arial, sans-serif;
   font-weight: 700;
   line-height: 24px;
   color: var(--basic-dark);
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+  max-width: 435px;
 }
 
 .search-hotel-button {
@@ -287,6 +291,9 @@ img {
   outline: none;
   width: 568px;
   height: 86px;
+  /* position: absolute;
+  top: 0; */
+  position: relative;
 }
 
 .search-hotel-button:hover,
@@ -304,8 +311,12 @@ img {
 }
 
 .search-hotel-form-wrapper {
+  display: none;
   width: 568px;
   background-color: var(--basic-white);
+  position: absolute;
+  top: 86px;
+  left: 316px;
   z-index: 10;
 }
 
@@ -390,30 +401,19 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   }
 
-/* .footer-contacts,
-.footer-social,
-.footer-copyright {
-  width: 400px;
-} */
-
 .footer-contacts {
   font-size: 21px;
   outline: 5px solid rgba(71, 226, 180, 0.6);
   outline-offset: -5px;
   margin: o auto;
   padding: 0;
-  display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
-  align-items: end;
 }
 
 .footer-contacts a {
   font-size: 21px;
-
-}
-
-.footer-contacts a {
   color: var(--basic-black);
+  /* display: flex;
+  justify-content: center; */
 }
 
 .footer-contacts a:hover,
@@ -433,7 +433,6 @@ img {
 .footer-social {
   outline: 5px solid rgba(139, 8, 129, 0.6);
   outline-offset: -5px;
-  justify-self: center;
 }
 
 .footer-social ul {
@@ -443,6 +442,8 @@ img {
   column-gap: 6px;
   margin: 0;
   padding: 36px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-social-list-item {
@@ -451,7 +452,6 @@ img {
   height: 46px;
   vertical-align: middle;
   text-align: center;
-
 }
 
 .footer-social-list-item img {
@@ -468,15 +468,12 @@ img {
   background-color: var(--basic-white);
   outline: 5px solid rgba(20, 173, 233, 0.6);
   outline-offset: -5px;
-  justify-self: left;
   padding: 35px 0;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 6px;
+  /* display: flex;
+  justify-content: center; */
 }
 
 .footer-copyright p {
-  justify-self: right;
   margin: 10px 0;
 }
 

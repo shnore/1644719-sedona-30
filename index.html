@@ -13,15 +13,15 @@
   <div class="page-content">
     <header class="header">
       <nav class="navigation">
-        <ul class="menu">
-          <li class="nav-item"><a href="">Информация</a></li>
-          <li class="nav-item"><a href="">Фото и видео</a></li>
-          <li class="nav-item"><a href="">Карта штата</a></li>
-          <li class="nav-item"><a href="catalog.html">Гостиницы</a></li>
-        </ul>
         <a class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </a>
+        <ul class="menu">
+          <li class="nav-item align-left"><a href="">Информация</a></li>
+          <li class="nav-item align-left"><a href="">Фото и видео</a></li>
+          <li class="nav-item align-right"><a href="">Карта штата</a></li>
+          <li class="nav-item align-right"><a href="catalog.html">Гостиницы</a></li>
+        </ul>
       </nav>
     </header>
     <main class="content">
@@ -31,13 +31,13 @@
         </div>
         <div class="intro-content">
           <p class="intro-text">
-            СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+            СЕДОНА — НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,
             ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!
           </p>
           <p class="text-subline text-intro-subline">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
         </div>
       </section>
-      <section class="panel-wrapper">
+      <section class="panel-wrapper-left">
         <div class="panel">
           <p class="panel-header">
             НАСТОЯЩИЙ
@@ -71,7 +71,7 @@
           </li>
         </ul>
       </section>
-      <section class="panel-wrapper-2">
+      <section class="panel-wrapper-right">
         <img class="panel-image" src="img/canyon.jpg" width="800" height="256" alt="Каньон">
         <div class="panel">
           <p class="panel-header">
@@ -110,31 +110,33 @@
       </section>
       <section class="search-hotel">
         <p class="search-hotel-header">ЗАИНТЕРЕСОВАЛИСЬ?</p>
-        <p class="search-hotel-info">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
+        <p class="search-hotel-info">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
           И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <button class="search-hotel-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-        <div class="search-hotel-form-wrapper">
-          <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
-            <label for="start-date">ДАТА ЗАЕЗДА:</label>
-            <input type="date" name="start-date" value="2017-04-24">
-            <label for="end-date">ДАТА ВЫЕЗДА:</label>
-            <input type="date" name="end-date" placeholder="2017-07-04">
-            <div class="numbers">
-              <div class="number">
-              <label for="adults">ВЗРОСЛЫЕ:</label>
-              <button class="minus" type="button"></button>
-              <input type="text" type="number" id="adults" name="adults" value="2">
-              <button class="plus" type="button"></button>
-            </div>
-            <div class="number">
-              <label for="children">ДЕТИ:</label>
-              <button class="minus" type="button"></button>
-              <input type="text" type="number" id="children" name="children" value="0">
-              <button class="plus" type="button"></button>
-            </div>
-            </div>
-            <button class="search-button"type="submit">НАЙТИ</button>
-          </form>
+        <div class="search">
+          <button class="search-hotel-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <div class="search-hotel-form-wrapper">
+            <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
+              <label for="start-date">ДАТА ЗАЕЗДА:</label>
+              <input type="date" name="start-date" value="2017-04-24">
+              <label for="end-date">ДАТА ВЫЕЗДА:</label>
+              <input type="date" name="end-date" placeholder="2017-07-04">
+              <div class="numbers">
+                <div class="number">
+                  <label for="adults">ВЗРОСЛЫЕ:</label>
+                  <button class="minus" type="button"></button>
+                  <input type="text" type="number" id="adults" name="adults" value="2">
+                  <button class="plus" type="button"></button>
+                </div>
+                <div class="number">
+                  <label for="children">ДЕТИ:</label>
+                  <button class="minus" type="button"></button>
+                  <input type="text" type="number" id="children" name="children" value="0">
+                  <button class="plus" type="button"></button>
+                </div>
+              </div>
+              <button class="search-button" type="submit">НАЙТИ</button>
+            </form>
+          </div>
         </div>
       </section>
       <section>
@@ -143,11 +145,8 @@
     </main>
     <footer class="main-footer">
       <section class="footer-contacts">
-
-          <a href="">#visitSEDONA</a>
-
-          <a href="">ТЕЛ: +7(495) 666-01-66</a>
-
+        <a href="">#visitSEDONA</a>
+        <a href="">ТЕЛ: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
         <ul>
@@ -169,10 +168,9 @@
         </ul>
       </section>
       <section class="footer-copyright">
-          <p>Website by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
-          </a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
+        </a>
       </section>
     </footer>
   </div>
