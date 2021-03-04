@@ -51,22 +51,22 @@
       </section>
       <section class="features">
         <ul class="features-list">
-          <li class="feature-item">
+          <li class="feature-item upper">
             <img src="img/icons/icon-1.svg" width="75" height="72" alt="Жильё">
             <p class="feature-item-header">ЖИЛЬЁ</p>
-            <p class="text-subline">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
+            <p class="text-subline upper-features-subline">РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ
               МОТЕЛЕ, ВСЁ КАК В КИНО!</p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item upper">
             <img src="img/icons/icon-3.svg" width="75" height="70" alt="Еда">
             <p class="feature-item-header">ЕДА</p>
-            <p class="text-subline">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,
+            <p class="text-subline upper-features-subline">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР,
               ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item upper">
             <img src="img/icons/icon-2.svg" width="64" height="77" alt="Сувениры">
             <p class="feature-item-header">СУВЕНИРЫ</p>
-            <p class="text-subline">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
+            <p class="text-subline upper-features-subline">НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО
               ПРОИЗВОДСТВА!</p>
           </li>
         </ul>
@@ -84,23 +84,23 @@
         </div>
       </section>
       <section class="features">
-        <ul class="features-list">
+        <ul class="features-list lower">
           <li class="feature-item">
-            <p class="feature-item-header header-2">НЕБОЛЬШАЯ
+            <p class="feature-item-header multiline-header">НЕБОЛЬШАЯ
               ПЛОЩАДЬ</p>
             <p class="feature-number">— №3 —</p>
             <p class="text-subline text-features-subline">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
               НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
           <li class="feature-item">
-            <p class="feature-item-header header-2">КРАСИВАЯ
+            <p class="feature-item-header multiline-header">КРАСИВАЯ
               ДОРОГА</p>
             <p class="feature-number">— №4 —</p>
             <p class="text-subline text-features-subline">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
               НЕ СКУЧНО!</p>
           </li>
           <li class="feature-item">
-            <p class="feature-item-header header-2">МАЛО
+            <p class="feature-item-header multiline-header">МАЛО
               ТУРИСТОВ</p>
             <p class="feature-number">— №5 —</p>
             <p class="text-subline text-features-subline">БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН
@@ -116,24 +116,46 @@
           <button class="search-hotel-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           <div class="search-hotel-form-wrapper">
             <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
-              <label for="start-date">ДАТА ЗАЕЗДА:</label>
-              <input type="date" name="start-date" value="2017-04-24">
-              <label for="end-date">ДАТА ВЫЕЗДА:</label>
-              <input type="date" name="end-date" placeholder="2017-07-04">
-              <div class="numbers">
-                <div class="number">
-                  <label for="adults">ВЗРОСЛЫЕ:</label>
-                  <button class="minus" type="button"></button>
-                  <input type="text" type="number" id="adults" name="adults" value="2">
-                  <button class="plus" type="button"></button>
+              <div class="search-date">
+                <p class="search-date-header">ДАТА ЗАЕЗДА:</p>
+                <div class="date-selector">
+                  <p class="date-start">24 апреля 2017</p>
+                  <img src="img/icons/calendar.svg" width="21"></img>
                 </div>
-                <div class="number">
-                  <label for="children">ДЕТИ:</label>
-                  <button class="minus" type="button"></button>
-                  <input type="text" type="number" id="children" name="children" value="0">
-                  <button class="plus" type="button"></button>
+                <p class="search-date-header">ДАТА ВЫЕЗДА:</p>
+                <div class="date-selector">
+                  <p class="date-end">4 июля 2017</p>
+                  <img src="img/icons/calendar.svg" width="21"></img>
                 </div>
               </div>
+
+              <div class="visitors-selector">
+                <div class="adults">
+                  <p class="select-visitors-header">ВЗРОСЛЫЕ:</p>                
+                  <div class="visitors-number">
+                    <p class="minus number" >
+                      <img src="img/icons/minus-sign.svg" width="12" height="3"></img>
+                    </p>
+                    <p class="number">2</p>
+                    <p class="plus number">
+                      <img src="img/icons/plus-sign.svg" width="12" height="11"></img>
+                    </p>
+                  </div>
+                </div>
+                <div class="children">
+                  <p class="select-visitors-header">ДЕТИ:</p>                
+                  <div class="visitors-number">
+                    <p class="number" >
+                      <img class="minus" src="img/icons/minus-sign.svg" width="12" height="3"></img>
+                    </p>
+                    <p class="number">0</p>
+                    <p class="number">
+                      <img class="plus" src="img/icons/plus-sign.svg" width="12" height="11"></img>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <button class="search-button" type="submit">НАЙТИ</button>
             </form>
           </div>
@@ -143,7 +165,7 @@
         <img src="img/map.jpg" width="1199" height="594" alt="Карта">
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer map">
       <section class="footer-contacts">
         <a href="">#visitSEDONA</a>
         <a href="">ТЕЛ: +7(495) 666-01-66</a>
@@ -167,8 +189,9 @@
           </li>
         </ul>
       </section>
-      <section class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by
+      <section>
+        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span>Website by</span>
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
         </a>
       </section>
