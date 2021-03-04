@@ -85,21 +85,21 @@
       </section>
       <section class="features">
         <ul class="features-list lower">
-          <li class="feature-item">
+          <li class="feature-item lower">
             <p class="feature-item-header multiline-header">НЕБОЛЬШАЯ
               ПЛОЩАДЬ</p>
             <p class="feature-number">— №3 —</p>
             <p class="text-subline text-features-subline">ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ
               НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item lower">
             <p class="feature-item-header multiline-header">КРАСИВАЯ
               ДОРОГА</p>
             <p class="feature-number">— №4 —</p>
             <p class="text-subline text-features-subline">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ
               НЕ СКУЧНО!</p>
           </li>
-          <li class="feature-item">
+          <li class="feature-item lower">
             <p class="feature-item-header multiline-header">МАЛО
               ТУРИСТОВ</p>
             <p class="feature-number">— №5 —</p>
@@ -113,45 +113,47 @@
         <p class="search-hotel-info">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,
           И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <div class="search">
-          <button class="search-hotel-button" type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+          <button class="search-hotel-button" type="button" onclick="myFunction()">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
           <div class="search-hotel-form-wrapper">
             <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
+
               <div class="search-date">
-                <p class="search-date-header">ДАТА ЗАЕЗДА:</p>
+                <label class="search-date-header" for="date-start">ДАТА ЗАЕЗДА:</label>
                 <div class="date-selector">
-                  <p class="date-start">24 апреля 2017</p>
-                  <img src="img/icons/calendar.svg" width="21"></img>
+                  <input class="date-start" type="text" name="date-start" value="24 апреля 2017" readonly></input>
+                  <input class="date-start-button" type="date" name="date-start-button">
+                  </input>
                 </div>
-                <p class="search-date-header">ДАТА ВЫЕЗДА:</p>
+                <label class="search-date-header" for="date-end">ДАТА ВЫЕЗДА:</label>
                 <div class="date-selector">
-                  <p class="date-end">4 июля 2017</p>
-                  <img src="img/icons/calendar.svg" width="21"></img>
+                  <input class="date-end" type="text" name="date-end" value="4 июля 2017" readonly></input>
+                  <input class="date-end-button" type="date" name="date-end-button">
+                  </input>
                 </div>
               </div>
 
+              <script>
+                function myFunction() {
+                  var element = document.getElementsByClassName("search-hotel-form-wrapper")[0];
+                  element.classList.toggle("hide");
+                }
+              </script>
+
               <div class="visitors-selector">
                 <div class="adults">
-                  <p class="select-visitors-header">ВЗРОСЛЫЕ:</p>                
+                  <label class="select-visitors-header">ВЗРОСЛЫЕ:</label>                
                   <div class="visitors-number">
-                    <p class="minus number" >
-                      <img src="img/icons/minus-sign.svg" width="12" height="3"></img>
-                    </p>
-                    <p class="number">2</p>
-                    <p class="plus number">
-                      <img src="img/icons/plus-sign.svg" width="12" height="11"></img>
-                    </p>
+                    <input class="number minus" type="button"></input>
+                    <input class="number"  value="2"></input>
+                    <input class="number plus" type="button"></input>
                   </div>
                 </div>
                 <div class="children">
-                  <p class="select-visitors-header">ДЕТИ:</p>                
+                  <label class="select-visitors-header">ДЕТИ:</label>                
                   <div class="visitors-number">
-                    <p class="number" >
-                      <img class="minus" src="img/icons/minus-sign.svg" width="12" height="3"></img>
-                    </p>
-                    <p class="number">0</p>
-                    <p class="number">
-                      <img class="plus" src="img/icons/plus-sign.svg" width="12" height="11"></img>
-                    </p>
+                    <input class="number minus" type="button"></input>
+                    <input class="number" value="0"></input>
+                    <input class="number plus" type="button"></input>
                   </div>
                 </div>
               </div>

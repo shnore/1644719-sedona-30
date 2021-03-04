@@ -260,20 +260,20 @@ img {
   flex-direction: row;
 }
 
-.lower {
-  background-color: var(--basic-lighter-grey);
-}
-
 .feature-item {
   /* outline: 5px solid rgba(221, 61, 221, 0.7);
-  outline-offset: -5px; */
+  outline-offset: -3px; */
   list-style: none;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
-  /* justify-content: center; */
+}
+
+.lower {
+  background-color: var(--basic-lighter-grey);
+  padding-top: 0;
 }
 
 .feature-item img {
@@ -336,8 +336,6 @@ img {
   outline: none;
   width: 568px;
   height: 86px;
-  /* position: absolute;
-  top: 0; */
   position: relative;
 }
 
@@ -365,6 +363,10 @@ img {
   z-index: 10;
 }
 
+.hide {
+  display: none;
+}
+
 .search-hotel-form {
   background-color: var(--basic-white);
   margin: 55px;
@@ -387,6 +389,27 @@ img {
   margin-bottom: 30px; */
 }
 
+.search-hotel-form input:active,
+.search-hotel-form input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-hotel-form input[type="date"] {
+  background-color: transparent;
+  outline: none;
+}
+
+input::-webkit-datetime-edit, 
+input::-webkit-inner-spin-button, 
+input::-webkit-clear-button {
+  display: none;
+}
+
+input::-webkit-calendar-picker-indicator {
+  background-image: url("../img/icons/calendar.svg");
+}
+
 .date-selector {
   background-color: var(--basic-light);
   display: flex;
@@ -407,17 +430,14 @@ img {
 .visitors-selector {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: baseline;
-}
-
-.visitors-selector p {
-  margin: 0;
   margin-bottom: 50px;
+  /* padding-left: 55px; */
 }
 
 .select-visitors-header {
-  padding: 0 45px;
+  margin-right: 40px;
 }
 
 .visitors-number {
@@ -456,10 +476,16 @@ img {
 
 .minus {
   margin: auto;
+  background-image: url("../img/icons/minus-sign.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .plus {
   margin: auto;
+  background-image: url("../img/icons/plus-sign.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .search-button {
