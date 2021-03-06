@@ -28,10 +28,9 @@
       <!--filter-->
       <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="filter-fieldset">
-            <legend class="filter-item-header">ИНФРАСТРУКТУРА:</legend>
+            <p class="filter-item-header">ИНФРАСТРУКТУРА:</p>
             <label class="filter-checkbox-label">
-              <input type="checkbox" name="info" checked>
-              БАССЕЙН
+              <input type="checkbox" name="info" checked>БАССЕЙН
             </label>
             <label class="filter-checkbox-label">
               <input type="checkbox" name="info">ПАРКОВКА
@@ -41,10 +40,9 @@
             </label>
           </fieldset>
           <fieldset class="filter-fieldset">
-            <legend class="filter-item-header">ТИП ЖИЛЬЯ:</legend>
+            <p class="filter-item-header">ТИП ЖИЛЬЯ:</p>
             <label class="filter-checkbox-label">
-              <input type="checkbox" name="type" checked>
-              ГОСТИНИЦА
+              <input type="checkbox" name="type" checked>ГОСТИНИЦА
             </label>
             <label class="filter-checkbox-label">
               <input type="checkbox" name="type" checked>МОТЕЛЬ
@@ -53,7 +51,7 @@
               <input type="checkbox" name="type" checked>АПАРТАМЕНТЫ
             </label>
           </fieldset>
-        <div>
+        <div class="filter-price">
           <p class="filter-item-header">СТОИМОСТЬ В СУТКИ (Р):</p>
           <div class="filter-price-values">
             <label class="filter-price-min">от
@@ -71,12 +69,14 @@
       <section>
         <div class="results">
           <p class="results-item-header">НАЙДЕНО: 3</p>
+          <div class="sort-menu">
           <p class="sort-header">Сортировка:</p>
-          <ul class="sort-menu">
-            <li class="sort-control sort-active"><a href="">По цене</a></li>
-            <li class="sort-control"><a href="">По типу</a></li>
-            <li class="sort-control"><a href="">По рейтингу</a></li>
-          </ul>
+          
+          <a class="sort-menu-item sort-active" href="">По цене</a>
+            <a class="sort-menu-item" href="">По типу</a>
+           <a class="sort-menu-item" href="">По рейтингу</a>
+          
+        </div>
           <div class="sort-controls">
             <a class="sort-ascending">▲</a>
             <a class="sort-descending">▼</a>
@@ -89,15 +89,17 @@
               <img src="img/thumb-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
               <!--TEXT-->
               <div class="results-data">
-                <p class="results-item-header">AMARA RESORT & SPA</p>
+                <p class="results-item-header hotel-name">AMARA RESORT & SPA</p>
+                <div class="results-item-block">
                 <div class="results-item-text">
                   <p class="results-item-subline">ГОСТИНИЦА</p>
-                  <p class="results-item-subline">ОТ 4000 Р.</p>
+                  <button class="details-button" type="button">ПОДРОБНЕЕ</button>                 
                 </div>
-                <p>
-                  <button class="details-button" type="button">ПОДРОБНЕЕ</button>
+                <div class="results-item-text">
+                  <p class="results-item-subline">ОТ 4000 Р.</p>
                   <button class="book-button" type="button">ЗАБРОНИРОВАТЬ</button>
-                </p>
+                </div>
+                </div>
               </div>
               <!--RATING-->
               <div class="rating">
@@ -110,15 +112,17 @@
               <img src="img/thumb-2.jpg" width="135" height="90" alt="Desert Quail Inn">
               <!--TEXT-->
               <div class="results-data">
-                <p class="results-item-header">DESERT QUAIL INN</p>
+                <p class="results-item-header hotel-name">DESERT QUAIL INN</p>
+                <div class="results-item-block">
                 <div class="results-item-text">
                   <p class="results-item-subline">МОТЕЛЬ</p>
-                  <p class="results-item-subline">ОТ 3000 Р.</p>
+                  <button class="details-button" type="button">ПОДРОБНЕЕ</button>                 
                 </div>
-                <p>
-                  <button class="details-button" type="button">ПОДРОБНЕЕ</button>
+                <div class="results-item-text">
+                  <p class="results-item-subline">ОТ 3000 Р.</p>
                   <button class="book-button" type="button">ЗАБРОНИРОВАТЬ</button>
-                </p>
+                </div>
+                </div>
               </div>
               <!--RATING-->
               <div class="rating">
@@ -131,15 +135,17 @@
               <img src="img/thumb-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
               <!--TEXT-->
               <div class="results-data">
-                <p class="results-item-header">VILLAS AT POCO DIABLO</p>
+                <p class="results-item-header hotel-name">VILLAS AT POCO DIABLO</p>
+                <div class="results-item-block">
                 <div class="results-item-text">
                   <p class="results-item-subline">АПАРТАМЕНТЫ</p>
-                  <p class="results-item-subline">ОТ 2000 Р.</p>
+                  <button class="details-button" type="button">ПОДРОБНЕЕ</button>                 
                 </div>
-                <p>
-                  <button class="details-button" type="button">ПОДРОБНЕЕ</button>
+                <div class="results-item-text">
+                  <p class="results-item-subline">ОТ 2000 Р.</p>
                   <button class="book-button" type="button">ЗАБРОНИРОВАТЬ</button>
-                </p>
+                </div>
+                </div>
               </div>
               <!--RATING-->
               <div class="rating">
@@ -151,34 +157,19 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer no-overlay">
       <section class="footer-contacts">
         <a href="">#visitSEDONA</a>
         <a href="">ТЕЛ: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
-        <ul>
-          <li class="footer-social-list-item">
-            <a class="social-button" href="">
-              <img class="social-icon" src="img/icons/twitter.svg" width="17" height="17" alt="Твиттер">
-            </a>
-          </li>
-          <li class="footer-social-list-item">
-            <a class="social-button" href="">
-              <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
-            </a>
-          </li>
-          <li class="footer-social-list-item">
-            <a class="social-button" href="">
-              <img src="img/icons/youtube.svg" width="20" height="16" alt="Ютуб">
-            </a>
-          </li>
-        </ul>
+        <button class="social-button twitter" onclick="location.href='#'"></button>
+        <button class="social-button facebook" onclick="location.href='#'"></button>
+        <button class="social-button youtube" onclick="location.href='#'"></button>
       </section>
       <section class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">Website by
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
-        </a>
+        <span>Website by</span>
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </section>
     </footer>
   </div>
