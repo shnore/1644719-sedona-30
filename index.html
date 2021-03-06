@@ -120,44 +120,33 @@
               <div class="search-date">
                 <label class="search-date-header" for="date-start">ДАТА ЗАЕЗДА:</label>
                 <div class="date-selector">
-                  <input class="date-start" type="text" name="date-start" value="24 апреля 2017" readonly></input>
-                  <input class="date-start-button" type="date" name="date-start-button">
-                  </input>
+                  <input class="date-start" type="text" name="date-start" value="24 апреля 2017">
+                  <button class="date-start-button calendar" type="button"></button>
                 </div>
                 <label class="search-date-header" for="date-end">ДАТА ВЫЕЗДА:</label>
                 <div class="date-selector">
-                  <input class="date-end" type="text" name="date-end" value="4 июля 2017" readonly></input>
-                  <input class="date-end-button" type="date" name="date-end-button">
-                  </input>
+                  <input class="date-end" name="date-end" value="4 июля 2017">
+                  <button class="date-end-button calendar" type="button"></button>
                 </div>
               </div>
-
-              <script>
-                function myFunction() {
-                  var element = document.getElementsByClassName("search-hotel-form-wrapper")[0];
-                  element.classList.toggle("hide");
-                }
-              </script>
-
               <div class="visitors-selector">
                 <div class="adults">
-                  <label class="select-visitors-header">ВЗРОСЛЫЕ:</label>                
+                  <label class="select-visitors-header">ВЗРОСЛЫЕ:</label>
                   <div class="visitors-number">
-                    <input class="number minus" type="button"></input>
-                    <input class="number"  value="2"></input>
-                    <input class="number plus" type="button"></input>
+                    <button class="number minus" type="button"></button>
+                    <input class="number" type="number" value="2">
+                    <button class="number plus" type="button"></button>
                   </div>
                 </div>
                 <div class="children">
-                  <label class="select-visitors-header">ДЕТИ:</label>                
+                  <label class="select-visitors-header">ДЕТИ:</label>
                   <div class="visitors-number">
-                    <input class="number minus" type="button"></input>
-                    <input class="number" value="0"></input>
-                    <input class="number plus" type="button"></input>
+                    <button class="number minus" type="button"></button>
+                    <input class="number" type="number" value="0">
+                    <button class="number plus" type="button"></button>
                   </div>
                 </div>
               </div>
-
               <button class="search-button" type="submit">НАЙТИ</button>
             </form>
           </div>
@@ -167,38 +156,30 @@
         <img src="img/map.jpg" width="1199" height="594" alt="Карта">
       </section>
     </main>
-    <footer class="main-footer map">
+    <footer class="main-footer">
       <section class="footer-contacts">
         <a href="">#visitSEDONA</a>
         <a href="">ТЕЛ: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
-        <ul>
-          <li class="footer-social-list-item">
-            <a class="social-button" href="">
-              <img class="social-icon" src="img/icons/twitter.svg" width="17" height="17" alt="Твиттер">
-            </a>
-          </li>
-          <li class="footer-social-list-item">
-            <a class="social-button" href="">
-              <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Фейсбук">
-            </a>
-          </li>
-          <li class="footer-social-list-item">
-            <a class="social-button" href="">
-              <img src="img/icons/youtube.svg" width="20" height="16" alt="Ютуб">
-            </a>
-          </li>
-        </ul>
+        <button class="social-button twitter" onclick="location.href='#'"></button>
+        <button class="social-button facebook" onclick="location.href='#'"></button>
+        <button class="social-button youtube" onclick="location.href='#'"></button>
       </section>
-      <section>
-        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">
-          <span>Website by</span>
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип разработчика">
-        </a>
+      <section class="footer-copyright">
+        <span>Website by</span>
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </section>
     </footer>
   </div>
 </body>
 
 </html>
+
+
+<script>
+  function myFunction() {
+    var element = document.getElementsByClassName("search-hotel-form-wrapper")[0];
+    element.classList.toggle("hide");
+  }
+</script>
