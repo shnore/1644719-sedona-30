@@ -19,14 +19,15 @@
         <ul class="menu">
           <li class="nav-item align-left"><a href="">Информация</a></li>
           <li class="nav-item align-left"><a href="">Фото и видео</a></li>
-          <li class="nav-item"></li>
           <li class="nav-item align-right"><a href="">Карта штата</a></li>
           <li class="nav-item align-right current"><a href="">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="content">
+      <h1 class="visually-hidden">Search hotels page</h1>
       <!--filter-->
+      <h2 class="visually-hidden">Filter values</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="POST">
           <fieldset class="checkbox-filter">
             <legend class="checkbox-legend">ИНФРАСТРУКТУРА:</legend>
@@ -63,7 +64,6 @@
             </ul>
           </fieldset>
           <fieldset class="price-filter">
-        <!-- <div class="filter-price"> -->
           <legend class="price-legend">СТОИМОСТЬ В СУТКИ (Р):</legend>
           <div class="filter-price-values">
 
@@ -99,6 +99,7 @@
       </form>
       <!--results-->
       <section>
+        <h2 class="visually-hidden">Search results</h2>
         <div class="results">
           <p class="results-item-header">НАЙДЕНО: 3</p>
           <div class="sort-menu">
@@ -116,8 +117,8 @@
           </ul>
         </div>
           <div class="sort-controls">
-            <a class="sort-ascending sort-control-current">▲</a>
-            <a class="sort-descending">▼</a>
+            <a class="sort-ascending sort-control-current" aria-label="sort ascending">▲</a>
+            <a class="sort-descending" aria-label="sort descending">▼</a>
           </div>
         </div>
         <div>
@@ -197,10 +198,12 @@
     </main>
     <footer class="main-footer no-overlay">
       <section class="footer-contacts">
+        <h2 class="visually-hidden">Contacts</h2>
         <a href="">#visitSEDONA</a>
         <a href="">ТЕЛ: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
+        <h2 class="visually-hidden">Social networks</h2>
         <ul class="social-icons-list">
           <li>
             <a class="social-button twitter" href="#">
@@ -220,8 +223,8 @@
         </ul>
       </section>
       <section class="footer-copyright">
-        <span>Website by</span>
-        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+        <h2 class="visually-hidden">Website copyright</h2>
+        <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss">Website by</a>
       </section>
     </footer>
   </div>
