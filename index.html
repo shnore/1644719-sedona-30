@@ -17,7 +17,7 @@
           <img src="img/logo.svg" width="138" height="70" alt="Логотип Седона">
         </a>
         <ul class="menu">
-          <li class="nav-item align-left"><a href="">Информация</a></li>
+          <li class="nav-item align-left current"><a href="">Информация</a></li>
           <li class="nav-item align-left"><a href="">Фото и видео</a></li>
           <li class="nav-item align-right"><a href="">Карта штата</a></li>
           <li class="nav-item align-right"><a href="catalog.html">Гостиницы</a></li>
@@ -120,7 +120,7 @@
           И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         <div class="search">
           <button class="search-hotel-button" type="button" onclick="myFunction()">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-          <div class="search-hotel-form-wrapper">
+          <div class="search-hotel-form-wrapper hide">
             <form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="POST">
 
               <div class="search-date">
@@ -158,7 +158,8 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
         <img src="img/map.jpg" width="1199" height="594" alt="Карта Седоны с окрестностями">
       </section>
     </main>

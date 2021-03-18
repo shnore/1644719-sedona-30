@@ -160,15 +160,24 @@ img {
 .nav-item a:hover,
 .nav-item a:focus,
 .user-navigation a:hover,
-.user-navigation a:focus {
+.user-navigation a:focus,
+.footer-contacts a:hover,
+.footer-contacts a:focus {
   color: var(--basic-blue);
 }
 
-.current a,
+
 .nav-item a:active,
-.user-navigation a:active {
+.user-navigation a:active,
+.footer-contacts a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.current a {
   color: var(--basic-brown);
 }
+
 
 /* intro block */
 
@@ -331,7 +340,7 @@ img {
   color: var(--basic-dark);
   margin: 0 auto;
   max-width: 435px;
-  margin-bottom: 42px;
+  margin-bottom: 45px;
 }
 
 .search-hotel-button {
@@ -386,17 +395,14 @@ img {
   align-items: baseline;
 }
 
-.search-hotel-form input:active {
-  border: none;
-  outline: none;
-}
 
 .date-start,
 .date-end {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  margin: 5px 12px;
+  padding: 5px 12px;
+  width: 100%;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
@@ -408,7 +414,8 @@ button.calendar {
   border: none;
   width: 21px;
   height: 23px;
-  margin: 8px 9px;
+  position: absolute;
+  right: 9px;
 }
 
 button.calendar:hover,
@@ -432,20 +439,27 @@ button.calendar:active {
   align-items: center;
   min-width: 346px;
   margin-bottom: 29px;
+  position: relative;
 }
 
-.date-selector:hover,
+.date-start,
+.date-end {
+  border: 2px solid var(--field-bg-normal);
+}
+
 .date-start:hover,
 .date-end:hover {
   background-color: var(--field-bg-hover);
+  border: 2px solid var(--field-bg-hover);
 }
 
-.date-selector:active,
+.date-start:focus,
+.date-end:focus,
 .date-start:active,
 .date-end:active {
-  background-color: var(--field-bg-focus);
-  outline: 2px solid var(--field-border-focus);
-  outline-offset: -2px;
+  background-color: var(--basic-white);
+  border: 2px solid var(--field-bg-normal);
+  outline: none;
 }
 
 .visitors-selector {
@@ -473,8 +487,9 @@ button.calendar:active {
   align-items: baseline;
 }
 
-.search-hotel-form input:focus {
-  border-color: var(--special);
+.number:focus,
+.number:active {
+  outline: none;
 }
 
 .adults {
@@ -506,6 +521,9 @@ input[type=number] {
 }
 
 .number {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
   width: 38px;
   height: 34px;
   background-color: var(--basic-light);
@@ -543,7 +561,8 @@ input[type=number] {
   background-position: center;
 }
 
-.plus:hover {
+.plus:hover,
+.plus:focus {
   border: none;
   outline: none;
   background-image: url("../img/icons/plus-black.svg");
@@ -564,10 +583,10 @@ input[type=number] {
   font-size: 21px;
   font-weight: 700;
   border: none;
-  outline: none;
 }
 
-.search-button:hover {
+.search-button:hover,
+.search-button:focus {
   background-color: var(--hovered-blue);
   border: none;
   outline: none;
@@ -581,12 +600,16 @@ input[type=number] {
   outline: none;
 }
 
+.map img {
+  display: block;
+}
+
 .main-footer {
   background-color: var(--basic-white);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   opacity: 0.9;
-  margin-top: -128px;
+  margin-top: -120px;
 }
 
 .no-overlay {
@@ -751,6 +774,7 @@ input[type=number] {
   font-size: 16px;
   line-height: 21px;
   color: var(--basic-white);
+  text-align: left;
 }
 
 .filter ul {
@@ -910,7 +934,8 @@ fieldset:nth-child(2)>ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid white;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
   max-width: 313px;
 }
 
@@ -963,12 +988,13 @@ fieldset:nth-child(2)>ul {
 .filter-show-button {
   background-color: transparent;
   width: 137px;
-  border: 2px solid white;
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
   color: var(--basic-white);
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  outline: none;
+  /* outline: none; */
   padding: 5px;
   margin-right: 12px;
   margin-bottom: 35px;
@@ -1141,14 +1167,15 @@ fieldset:nth-child(2)>ul {
 }
 
 .details-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   width: 110px;
   background-color: var(--basic-blue);
   color: var(--basic-white);
-  font-size: 14px;
   border: none;
-  outline: none;
-  margin-top: 15px;
-  padding: 6px 16px;
+  margin-top: 14px;
+  padding: 3px 16px;
 }
 
 .details-button:hover {
@@ -1165,14 +1192,15 @@ fieldset:nth-child(2)>ul {
 }
 
 .book-button {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
   width: 142px;
   background-color: var(--basic-brown);
   color: var(--basic-white);
-  font-size: 14px;
   border: none;
-  outline: none;
-  margin-top: 15px;
-  padding: 6px 16px;
+  margin-top: 14px;
+  padding: 3px 16px;
 }
 
 .book-button:hover,
