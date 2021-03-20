@@ -7,6 +7,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body class="page-body">
@@ -137,18 +138,18 @@
               </div>
               <div class="visitors-selector">
                 <div class="adults">
-                  <label class="select-visitors-header">ВЗРОСЛЫЕ:</label>
+                  <label class="select-visitors-header" for="adults">ВЗРОСЛЫЕ:</label>
                   <div class="visitors-number">
                     <button class="number minus" type="button" aria-label="Уменьшить число взрослых"></button>
-                    <input class="number" type="number" value="2">
+                    <input class="number" type="number" id="adults" value="2">
                     <button class="number plus" type="button" aria-label="Увеличить число взрослых"></button>
                   </div>
                 </div>
                 <div class="children">
-                  <label class="select-visitors-header">ДЕТИ:</label>
+                  <label class="select-visitors-header" for="children">ДЕТИ:</label>
                   <div class="visitors-number">
                     <button class="number minus" type="button" aria-label="Уменьшить число детей"></button>
-                    <input class="number" type="number" value="0">
+                    <input class="number" type="number" id="children" value="0">
                     <button class="number plus" type="button" aria-label="Увеличить число детей"></button>
                   </div>
                 </div>
@@ -167,7 +168,7 @@
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a href="">#visitSEDONA</a>
-        <a href="">ТЕЛ: +7(495) 666-01-66</a>
+        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
       </section>
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -195,12 +196,8 @@
       </section>
     </footer>
   </div>
-  <script>
-    function myFunction() {
-      var element = document.getElementsByClassName("search-hotel-form-wrapper")[0];
-      element.classList.toggle("hide");
-    }
-  </script>
+
+  <script src="./js/script.min.js"></script>
 
 </body>
 
